@@ -27,7 +27,7 @@ import urllib.error
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, ".."))
-CROWBAR = os.path.expanduser("~/Desktop/CrowbarAF")
+CROWBAR = os.environ.get("CROWBAR_HOME", os.path.expanduser("~/Desktop/CrowbarAF"))
 sys.path.insert(0, os.path.join(ROOT, "victims"))
 sys.path.insert(0, os.path.join(ROOT, "attacker"))
 sys.path.insert(0, CROWBAR)
