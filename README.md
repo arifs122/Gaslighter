@@ -18,7 +18,10 @@ on harmless samples are the **attacks**.
 - **Tool-output injection (decoded string as carrier): `results/tool_output_injection-findings.md`** —
   a FLOSS-recovered instruction flips CrowbarAF to *benign* while the C2 URL is still in context;
   a neutral decoded note (control) does not.
-- Pending: indirect injection, black-box mutation, packing/API hiding, realistic scale,
+- **Indirect injection (symbol name / split strings / base64): `results/indirect_injection-findings.md`** —
+  clean negative result: qwen8 notices and resists all three code-embedded channels.
+  Together with #1 this isolates the vulnerable channel: the *trusted tool-output section*, not code.
+- Pending: black-box mutation, packing/API hiding, realistic scale,
   REA as a victim, frontier model A/B.
 
 ## Attack variants
@@ -32,11 +35,13 @@ gaslighter/
   docs/ROADMAP.md           phased plan
   docs/rea-test-plan.md     plan + record table for testing REA as a victim
   attacker/generate.py      harmless sample + obfuscation + injection generator
+  attacker/indirect.py      symbol-name / split-string / base64 variants
   attacker/inflate.py       decoy flood / context-overflow sample builder
   victims/direct_llm.py     victim 1: direct Ollama LLM (English JSON schema)
   experiments/smoke_test.py          2x2 (x N runs) smoke test
   experiments/attack_eval.py         naive LLM vs CrowbarAF under attack
   experiments/tool_output_injection.py  injection carried by FLOSS-decoded strings
+  experiments/indirect_injection.py      symbol / split / base64 channels
   experiments/llm_layer*.py          L0–L4 obfuscation ladder against the LLM
   experiments/native_layer.py        native (Ghidra pseudocode) variant
   experiments/evidence_ablation.py   clean vs dirty evidence
