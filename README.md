@@ -27,6 +27,10 @@ on harmless samples are the **attacks**.
 - **Packing / API hiding: `results/packing_evasion-findings.md`** —
   UPX blinds FLOSS/Ghidra but `upx -d` restores the payload; `dlsym` + string XOR is
   still decoded by FLOSS; the real effect of packing is cost (8.6× tokens).
+- **Evidence-channel attacks: `results/evidence_attacks-findings.md`** —
+  fake provenance / false reputation / contradiction / flood / silence: no flip,
+  even with a hidden payload. The model quotes the fake claims and rejects them.
+  Only the direct instruction (#1) changes the verdict.
 - Pending: realistic scale, REA as a victim, frontier model A/B.
 
 ## Attack variants
@@ -43,6 +47,7 @@ gaslighter/
   attacker/indirect.py      symbol-name / split-string / base64 variants
   attacker/mutate.py        black-box mutation variants (rename/encode/decoy/...)
   attacker/packing.py       UPX packing + dlsym API hiding variants
+  attacker/evidence.py      fake provenance / reputation / contradiction / flood
   attacker/inflate.py       decoy flood / context-overflow sample builder
   victims/direct_llm.py     victim 1: direct Ollama LLM (English JSON schema)
   experiments/smoke_test.py          2x2 (x N runs) smoke test
@@ -51,6 +56,7 @@ gaslighter/
   experiments/indirect_injection.py      symbol / split / base64 channels
   experiments/mutation_fuzz.py           single + stacked mutation screen
   experiments/packing_evasion.py         UPX / dlsym / string-encryption evaluation
+  experiments/evidence_attacks.py        evidence-content attacks
   experiments/llm_layer*.py          L0–L4 obfuscation ladder against the LLM
   experiments/native_layer.py        native (Ghidra pseudocode) variant
   experiments/evidence_ablation.py   clean vs dirty evidence
