@@ -22,7 +22,12 @@ USER = (
 )
 
 
-def ask(model: str, code: str, num_ctx: int = 8192) -> str:
+def ask(model: str, code: str, num_ctx: int = 8192,
+        evidence: list[str] | None = None) -> str:
+    user = USER.format(code=code)
+    if evidence:
+        user += ("\n\nStatic tool output (strings extracted from the binary):\n"
+                 "```\n" + "\n".join(evidence) + "\n```")
     payload = {
         "model": model,
         "stream": False,
@@ -31,7 +36,7 @@ def ask(model: str, code: str, num_ctx: int = 8192) -> str:
         "options": {"temperature": 0, "num_ctx": num_ctx, "num_predict": 1400},
         "messages": [
             {"role": "system", "content": SYSTEM},
-            {"role": "user", "content": USER.format(code=code)},
+            {"role": "user", "content": user},
         ],
     }
     req = urllib.request.Request(
