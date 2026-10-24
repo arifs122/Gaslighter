@@ -24,7 +24,10 @@ on harmless samples are the **attacks**.
 - **Black-box mutation screen: `results/mutation_fuzz-findings.md`** —
   no single or stacked surface mutation flips the verdict; decoys dilute suspicion to 1/9
   but inflate cost 4.4×; `any()` aggregation is what keeps the verdict correct.
-- Pending: packing/API hiding, realistic scale, REA as a victim, frontier model A/B.
+- **Packing / API hiding: `results/packing_evasion-findings.md`** —
+  UPX blinds FLOSS/Ghidra but `upx -d` restores the payload; `dlsym` + string XOR is
+  still decoded by FLOSS; the real effect of packing is cost (8.6× tokens).
+- Pending: realistic scale, REA as a victim, frontier model A/B.
 
 ## Attack variants
 `clean`, `clean_inj`, `obf`, `obf_inj`, `obf_encinj`
@@ -39,6 +42,7 @@ gaslighter/
   attacker/generate.py      harmless sample + obfuscation + injection generator
   attacker/indirect.py      symbol-name / split-string / base64 variants
   attacker/mutate.py        black-box mutation variants (rename/encode/decoy/...)
+  attacker/packing.py       UPX packing + dlsym API hiding variants
   attacker/inflate.py       decoy flood / context-overflow sample builder
   victims/direct_llm.py     victim 1: direct Ollama LLM (English JSON schema)
   experiments/smoke_test.py          2x2 (x N runs) smoke test
@@ -46,6 +50,7 @@ gaslighter/
   experiments/tool_output_injection.py  injection carried by FLOSS-decoded strings
   experiments/indirect_injection.py      symbol / split / base64 channels
   experiments/mutation_fuzz.py           single + stacked mutation screen
+  experiments/packing_evasion.py         UPX / dlsym / string-encryption evaluation
   experiments/llm_layer*.py          L0–L4 obfuscation ladder against the LLM
   experiments/native_layer.py        native (Ghidra pseudocode) variant
   experiments/evidence_ablation.py   clean vs dirty evidence
