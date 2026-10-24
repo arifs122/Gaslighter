@@ -1,0 +1,18 @@
+
+### model: qwen8:latest
+seviye      girdi  sure(s)  JSON   SIR  mesaj  bilmiyorum
+--------------------------------------------------------------
+L0           3045     13.7    OK   VAR    4/4           -
+L1           3743     12.0    OK   VAR    4/4           -
+L2          16885     24.8 TRUNC     -    0/4           -
+L3          33616     24.0    OK     -    0/4           -
+L4          36960     20.8    OK     -    3/4        EVET
+
+### model: qwen35-q6
+seviye      girdi  sure(s)  JSON   SIR  mesaj  bilmiyorum
+--------------------------------------------------------------
+L0           3045     20.4    OK   VAR    4/4           -
+L1           3743     10.8    OK   VAR    4/4           -
+L2          16885     22.6 TRUNC     -    0/4        EVET
+L3          33616     29.0    OK     -    0/4           -
+L4          36960     24.5    OK     -    3/4        EVET

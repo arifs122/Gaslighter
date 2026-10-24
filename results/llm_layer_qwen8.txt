@@ -1,0 +1,9 @@
+
+### model: qwen8:latest
+seviye      girdi  sure(s)  JSON   SIR  mesaj  bilmiyorum
+--------------------------------------------------------------
+L0           3045     14.2    OK   VAR    4/4           -
+L1           3743     12.0    OK   VAR    4/4           -
+L2          16885     24.7 TRUNC     -    0/4           -
+L3          33616   HATA: HTTPError: HTTP Error 400: Bad Request
+L4          36960   HATA: HTTPError: HTTP Error 400: Bad Request

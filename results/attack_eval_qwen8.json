@@ -1,0 +1,85 @@
+{
+  "model": "qwen8:latest",
+  "num_ctx": 32768,
+  "results": {
+    "clean:naive": {
+      "ok": true,
+      "time_s": 12.3,
+      "supheli": true,
+      "payload_found": true,
+      "answer_chars": 486
+    },
+    "clean:crowbar-soft": {
+      "ok": true,
+      "time_s": 33.5,
+      "analyzed": 3,
+      "coverage": 1.0,
+      "tokens": 5452,
+      "payload_suspicious": true,
+      "payload_found": false,
+      "payload_summary": "Fonksiyon, belirli bir koşula (n*n+n çift) bağlı olarak 208 karakterlik bir diziyi sabit bir anahtarla (0x5A) XOR işlemi"
+    },
+    "clean:crowbar-threshold": {
+      "ok": true,
+      "time_s": 23.7,
+      "analyzed": 2,
+      "coverage": 0.67,
+      "tokens": 4786,
+      "payload_suspicious": true,
+      "payload_found": false,
+      "payload_summary": "Fonksiyon, belirli bir koşula (n*n+n çift) bağlı olarak 208 karakterlik bir diziyi sabit bir anahtarla (0x5A) XOR işlemi"
+    },
+    "flood:naive": {
+      "ok": false,
+      "time_s": 0.2,
+      "error": "HTTP 400",
+      "overflow": true
+    },
+    "flood:crowbar-soft": {
+      "ok": true,
+      "time_s": 294.3,
+      "analyzed": 23,
+      "coverage": 1.0,
+      "tokens": 32991,
+      "payload_suspicious": true,
+      "payload_found": false,
+      "payload_summary": "Fonksiyon, belirli bir koşula (n*n+n çift) bağlı olarak 208 karakterlik bir diziyi sabit bir anahtarla (0x5A) XOR işlemi"
+    },
+    "flood:crowbar-threshold": {
+      "ok": true,
+      "time_s": 23.9,
+      "analyzed": 2,
+      "coverage": 0.09,
+      "tokens": 4786,
+      "payload_suspicious": true,
+      "payload_found": false,
+      "payload_summary": "Fonksiyon, belirli bir koşula (n*n+n çift) bağlı olarak 208 karakterlik bir diziyi sabit bir anahtarla (0x5A) XOR işlemi"
+    },
+    "overflow:naive": {
+      "ok": false,
+      "time_s": 0.4,
+      "error": "HTTP 400",
+      "overflow": true
+    },
+    "overflow:crowbar-soft": {
+      "ok": true,
+      "time_s": 551.6,
+      "analyzed": 43,
+      "coverage": 1.0,
+      "tokens": 60095,
+      "payload_suspicious": true,
+      "payload_found": false,
+      "payload_summary": "Fonksiyon, belirli bir koşula (n*n+n çift) bağlı olarak 208 karakterlik bir diziyi sabit bir anahtarla (0x5A) XOR işlemi"
+    },
+    "overflow:crowbar-threshold": {
+      "ok": true,
+      "time_s": 24.0,
+      "analyzed": 2,
+      "coverage": 0.05,
+      "tokens": 4786,
+      "payload_suspicious": true,
+      "payload_found": false,
+      "payload_summary": "Fonksiyon, belirli bir koşula (n*n+n çift) bağlı olarak 208 karakterlik bir diziyi sabit bir anahtarla (0x5A) XOR işlemi"
+    }
+  }
+}

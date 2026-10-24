@@ -1,0 +1,5 @@
+FROM /home/dayi/Qwen3.5-9B-Q6_K.gguf
+
+# Daha fazla context icin (Q6_K daha kucuk -> VRAM'de yer var)
+PARAMETER num_ctx 40960
+PARAMETER temperature 0
