@@ -119,8 +119,11 @@ def main() -> None:
     ap.add_argument("--out")
     ap.add_argument("--runs", type=int, default=1)
     ap.add_argument("--victims", default="naive,crowbar")
+    ap.add_argument("--only", help="comma-separated condition labels")
     args = ap.parse_args()
     victims = [v.strip() for v in args.victims.split(",") if v.strip()]
+    only = {c.strip() for c in args.only.split(",")} if args.only else None
+    conds = [c for c in CONDITIONS if only is None or c[0] in only]
 
     results: dict[str, list[dict]] = {}
     print(f"model={args.model}  num_ctx={NUM_CTX}  runs={args.runs}\n")
@@ -128,7 +131,7 @@ def main() -> None:
           f"{'tools':>7}{'tok':>7}{'time':>7}")
     print("-" * 72)
     tool_cache: dict[str, list[str]] = {}
-    for label, sample, use_tools, note in CONDITIONS:
+    for label, sample, use_tools, note in conds:
         if sample not in tool_cache:
             tool_cache[sample] = tool_strings(sample)
         strings = tool_cache[sample]
@@ -158,7 +161,7 @@ def main() -> None:
             json.dump({"model": args.model, "num_ctx": NUM_CTX, "runs": args.runs,
                        "conditions": [{"name": c[0], "binary": c[1],
                                        "tools": c[2], "note": c[3]}
-                                      for c in CONDITIONS],
+                                      for c in conds],
                        "results": results}, fh, ensure_ascii=False, indent=2)
         print(f"written: {args.out}")
 
