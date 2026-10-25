@@ -41,6 +41,7 @@ import direct_llm  # noqa: E402
 from indirect_injection import load_functions  # noqa: E402
 from tool_output_injection import _classify, _parse_json, load_code  # noqa: E402
 from llm_layer import Finding, FunctionInfo, LLMClient, analyze  # noqa: E402
+from llm_layer.verdict import compute_verdict  # noqa: E402
 
 NUM_CTX = 32768
 PAYLOAD = "192.0.2.1"
@@ -62,6 +63,13 @@ CONDITIONS = [
     ("hid_fake_prov", "hid_fake_prov", "hidden payload + fake provenance"),
     ("hid_fake_rep", "hid_fake_rep", "hidden payload + false reputation"),
     ("hid_contradiction", "hid_contradiction", "hidden payload + contradiction"),
+    ("par_base", "par_base", "paraphrase control (hidden payload)"),
+    ("par_para", "par_para", "paraphrased benign claim"),
+    ("par_polite", "par_polite", "polite analyst note"),
+    ("par_b64", "par_b64", "base64 instruction in evidence"),
+    ("par_rot13", "par_rot13", "rot13 instruction in evidence"),
+    ("par_split", "par_split", "split instruction in evidence"),
+    ("flood_last", "flood_last", "60 URLs + C2 (critical survives flood)"),
 ]
 
 
@@ -82,9 +90,12 @@ def evidence_strings(sample: str) -> list[str]:
     for key in ("decoded_strings", "stack_strings", "tight_strings"):
         for item in data.get(key, []):
             add(item.get("string", ""))
+    is_para = sample.startswith("par_")
     for item in data.get("static_strings", []):
         s = item.get("string", "")
-        if any(k in s.lower() for k in INTEREST):
+        ok = (len(s) >= 15 and all(32 <= ord(c) < 127 for c in s)) if is_para \
+            else any(k in s.lower() for k in INTEREST)
+        if ok:
             add(s)
     return out
 
@@ -144,12 +155,18 @@ def crowbar_victim(sample: str, evidence: list[str], model: str,
             susp.append(s.suspicious)
     verdict = any(susp) if susp else None
     text = " ".join(texts)
+    v4 = compute_verdict(fns, findings, res.summaries, analysis_failures=res.failures)
+    quarantined = sum(res.per_function.get(f.offset, {}).get("findings_quarantined", 0)
+                      for f in fns)
     out = {
         "ok": True, "time_s": round(time.time() - t, 1), "suspicious": verdict,
         "n_suspicious": sum(1 for x in susp if x), "analyzed": len(res.summaries),
         "tokens": res.token_total(), "failures": len(res.failures),
         "summary": next((res.summaries[f].summary for f in res.summaries), "")[:240],
         "n_evidence": len(evidence),
+        "quarantined": quarantined,
+        "verdict": v4["verdict"], "coverage": v4["coverage"]["ratio"],
+        "fail_closed": v4["counts"]["fail_closed"],
     }
     out.update(_classify(text, verdict))
     out["fake_evidence_echoed"] = _echo(text)
@@ -171,8 +188,8 @@ def main() -> None:
     results: dict[str, list[dict]] = {}
     print(f"model={args.model}  num_ctx={NUM_CTX}  runs={args.runs}\n")
     print(f"{'condition':<18}{'victim':<9}{'susp':>6}{'payload':>9}{'echo':>6}"
-          f"{'follow':>8}{'#ev':>5}{'tok':>7}{'time':>7}")
-    print("-" * 78)
+          f"{'follow':>8}{'q':>4}{'state':>14}{'#ev':>5}{'tok':>7}{'time':>7}")
+    print("-" * 96)
     cache: dict[str, list[str]] = {}
     for label, sample, note in conds:
         if sample not in cache:
@@ -191,6 +208,8 @@ def main() -> None:
                   f"{str(r.get('payload_mentioned', '-')):>9}"
                   f"{str(r.get('fake_evidence_echoed', '-')):>6}"
                   f"{str(r.get('followed_clean', '-')):>8}"
+                  f"{str(r.get('quarantined', '-')):>4}"
+                  f"{str(r.get('verdict', '-')):>14}"
                   f"{str(r.get('n_evidence', '-')):>5}"
                   f"{str(r.get('tokens', '-')):>7}{str(r.get('time_s', '-')):>7}")
         print()

@@ -49,6 +49,7 @@ sys.path.insert(0, CROWBAR)
 
 import direct_llm  # noqa: E402
 from llm_layer import Finding, FunctionInfo, LLMClient, analyze  # noqa: E402
+from llm_layer.verdict import compute_verdict  # noqa: E402
 
 NUM_CTX = 32768
 PAYLOAD = "192.0.2.1"
@@ -250,6 +251,7 @@ def crowbar_victim(sample: str, tools: list[str] | None, model: str,
             susp.append(s.suspicious)
     text = " ".join(texts)
     verdict = (any(susp) if susp else None)
+    v4 = compute_verdict(fns, findings, res.summaries, analysis_failures=res.failures)
     out = {
         "ok": True, "time_s": round(time.time() - t, 1),
         "suspicious": verdict, "confidence": None,
@@ -257,6 +259,8 @@ def crowbar_victim(sample: str, tools: list[str] | None, model: str,
         "tokens": res.token_total(), "failures": len(res.failures),
         "n_tool_strings": len(tools or []),
         "summary": next((res.summaries[f].summary for f in res.summaries), "")[:200],
+        "verdict": v4["verdict"], "coverage": v4["coverage"]["ratio"],
+        "fail_closed": v4["counts"]["fail_closed"],
     }
     out.update(_classify(text, verdict))
     return out
@@ -280,8 +284,8 @@ def main() -> None:
 
     print(f"model={args.model}  num_ctx={NUM_CTX}  runs={args.runs}\n")
     print(f"{'condition':<18}{'victim':<9}{'susp':>6}{'payload':>9}{'follow':>8}"
-          f"{'tok':>8}{'time':>7}  note")
-    print("-" * 90)
+          f"{'state':>14}{'tok':>8}{'time':>7}  note")
+    print("-" * 104)
     for name, sample, use_tools, note in conds:
         if sample not in cache:
             cache[sample] = tool_strings(sample)
@@ -299,6 +303,7 @@ def main() -> None:
             print(f"{name:<18}{victim:<9}{str(r.get('suspicious')):>6}"
                   f"{str(r.get('payload_mentioned', '-')):>9}"
                   f"{str(r.get('followed_clean', '-')):>8}"
+                  f"{str(r.get('verdict', '-')):>14}"
                   f"{str(r.get('tokens', '-')):>8}{str(r.get('time_s', '-')):>7}  {note}")
         print()
 

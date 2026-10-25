@@ -31,6 +31,11 @@ on harmless samples are the **attacks**.
   fake provenance / false reputation / contradiction / flood / silence: no flip,
   even with a hidden payload. The model quotes the fake claims and rejects them.
   Only the direct instruction (#1) changes the verdict.
+- **P0 hardening (2026-10-25):** four-state verdict (`malicious` / `needs_review` /
+  `unknown` / `no_evidence`), fail-closed backstop, two-tier evidence with
+  must-include critical findings. Paraphrase/base64/ROT13/split instructions evade
+  the quarantine (`q=0`) but do **not** flip the verdict; `flood_last` keeps the C2.
+  Results: `results/paraphrase_injection_qwen8_p0.json`.
 - Pending: realistic scale, REA as a victim, frontier model A/B.
 
 ## Attack variants
