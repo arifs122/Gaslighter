@@ -37,6 +37,7 @@ sys.path.insert(0, CROWBAR)
 import direct_llm  # noqa: E402
 from tool_output_injection import _classify, _parse_json, load_code  # noqa: E402
 from llm_layer import FunctionInfo, LLMClient, analyze  # noqa: E402
+from _client import make_client  # noqa: E402
 
 NUM_CTX = 32768
 
@@ -104,7 +105,7 @@ def crowbar_victim(sample: str, model: str, budget: int = 1500) -> dict:
     fns = [FunctionInfo(offset=f["offset"], name=f["name"], c_code=f["c_code"],
                         priority=f["priority"], is_library=f["is_library"])
            for f in fns_dict]
-    client = LLMClient(provider="ollama", model=model, num_ctx=NUM_CTX, num_predict=900)
+    client = make_client(model, num_ctx=NUM_CTX, num_predict=900)
     t = time.time()
     try:
         res = analyze(fns, [], client, budget_tokens=budget, min_priority=0, max_workers=1)

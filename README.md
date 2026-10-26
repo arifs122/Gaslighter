@@ -36,6 +36,9 @@ on harmless samples are the **attacks**.
   must-include critical findings. Paraphrase/base64/ROT13/split instructions evade
   the quarantine (`q=0`) but do **not** flip the verdict; `flood_last` keeps the C2.
   Results: `results/paraphrase_injection_qwen8_p0.json`.
+- **API A/B (OpenCode Go, 2026-10-26):** `deepseek-v4.1-flash` blocks the #1
+  injection and all paraphrase/base64/ROT13/split variants (verdict `malicious`);
+  `billing_source=go`. See `results/paraphrase_injection_deepseek-v4.1-flash_p0.json`.
 - Pending: realistic scale, REA as a victim, frontier model A/B.
 
 ## Attack variants

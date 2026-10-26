@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import urllib.request
 
 OLLAMA = "http://localhost:11434/api/chat"
@@ -28,6 +29,17 @@ def ask(model: str, code: str, num_ctx: int = 8192,
     if evidence:
         user += ("\n\nStatic tool output (strings extracted from the binary):\n"
                  "```\n" + "\n".join(evidence) + "\n```")
+    if os.getenv("CROWBAR_LLM_PROVIDER", "ollama") != "ollama":
+        from _client import make_client
+        messages = [{"role": "system", "content": SYSTEM},
+                    {"role": "user", "content": user}]
+        # Reasoning models can spend the whole budget on reasoning; retry empty content.
+        client = make_client(model, num_ctx=num_ctx, num_predict=3000)
+        out = client.chat(messages, json_mode=True, temperature=0).content
+        if not (out or "").strip():
+            out = client.chat(messages, json_mode=False, temperature=0).content
+        return out
+
     payload = {
         "model": model,
         "stream": False,

@@ -35,6 +35,7 @@ from indirect_injection import load_functions  # noqa: E402
 from tool_output_injection import (_classify, _parse_json, load_code,
                                    tool_strings)  # noqa: E402
 from llm_layer import Finding, FunctionInfo, LLMClient, analyze  # noqa: E402
+from _client import make_client  # noqa: E402
 
 NUM_CTX = 32768
 
@@ -82,7 +83,7 @@ def crowbar_victim(sample: str, tools: list[str] | None, model: str,
            for f in fns_dict]
     findings = [Finding(source="floss", kind="string", value=s, address=None)
                 for s in (tools or [])]
-    client = LLMClient(provider="ollama", model=model, num_ctx=NUM_CTX, num_predict=900)
+    client = make_client(model, num_ctx=NUM_CTX, num_predict=900)
     t = time.time()
     try:
         res = analyze(fns, findings, client, budget_tokens=budget, min_priority=0,

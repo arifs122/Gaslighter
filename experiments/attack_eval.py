@@ -35,6 +35,7 @@ sys.path.insert(0, CROWBAR)
 import inflate  # noqa: E402
 from direct_llm import ask as naive_ask  # noqa: E402
 from llm_layer import Finding, FunctionInfo, LLMClient, analyze  # noqa: E402
+from _client import make_client  # noqa: E402
 
 NUM_CTX = 32768
 
@@ -85,7 +86,7 @@ def crowbar_victim(sample: dict, model: str, mode: str) -> dict:
            for f in sample["functions"]]
     findings = [Finding(source="capa", kind="capability", value="string decoding",
                         address=sample["payload_offset"])]
-    client = LLMClient(provider="ollama", model=model, num_ctx=NUM_CTX, num_predict=900)
+    client = make_client(model, num_ctx=NUM_CTX, num_predict=900)
     t = time.time()
     kwargs = dict(budget_tokens=1500)
     if mode == "soft":
