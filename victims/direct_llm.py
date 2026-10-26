@@ -10,6 +10,9 @@ import json
 import os
 import urllib.request
 
+from _client import make_client
+from llm_layer.client import LLMResult
+
 OLLAMA = "http://localhost:11434/api/chat"
 
 SYSTEM = (
@@ -40,18 +43,17 @@ def _messages(user: str) -> list[dict]:
             {"role": "user", "content": user}]
 
 
-def ask_meta(model: str, code: str, num_ctx: int = 8192,
-             evidence: list[str] | None = None) -> tuple[str, int | None, int | None]:
-    """Return (content, prompt_tokens, completion_tokens)."""
+def ask_result(model: str, code: str, num_ctx: int = 8192,
+               evidence: list[str] | None = None) -> LLMResult:
+    """Return the full LLMResult (content, tokens, cost, finish_reason)."""
     user = _build_user(code, evidence)
 
     if os.getenv("CROWBAR_LLM_PROVIDER", "ollama") != "ollama":
-        from _client import make_client
         client = make_client(model, num_ctx=num_ctx, num_predict=3000)
         r = client.chat(_messages(user), json_mode=True, temperature=0)
         if not (r.content or "").strip():
             r = client.chat(_messages(user), json_mode=False, temperature=0)
-        return r.content, r.prompt_tokens, r.completion_tokens
+        return r
 
     payload = {
         "model": model,
@@ -67,10 +69,21 @@ def ask_meta(model: str, code: str, num_ctx: int = 8192,
     )
     with urllib.request.urlopen(req, timeout=600) as resp:
         data = json.loads(resp.read())
-    return (data.get("message", {}).get("content", ""),
-            data.get("prompt_eval_count"), data.get("eval_count"))
+    return LLMResult(
+        content=data.get("message", {}).get("content", ""),
+        prompt_tokens=data.get("prompt_eval_count"),
+        completion_tokens=data.get("eval_count"),
+        raw=data,
+        finish_reason=data.get("done_reason"),
+    )
+
+
+def ask_meta(model: str, code: str, num_ctx: int = 8192,
+             evidence: list[str] | None = None) -> tuple[str, int | None, int | None]:
+    r = ask_result(model, code, num_ctx=num_ctx, evidence=evidence)
+    return r.content, r.prompt_tokens, r.completion_tokens
 
 
 def ask(model: str, code: str, num_ctx: int = 8192,
         evidence: list[str] | None = None) -> str:
-    return ask_meta(model, code, num_ctx=num_ctx, evidence=evidence)[0]
+    return ask_result(model, code, num_ctx=num_ctx, evidence=evidence).content

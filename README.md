@@ -132,6 +132,46 @@ export CROWBAR_HOME="$HOME/Desktop/CrowbarAF"
 python3 experiments/attack_eval.py qwen8:latest --out results/attack_eval_qwen8.json
 ```
 
+## Scale experiments (DeepSeek)
+
+### Synthetic ladder
+
+```bash
+python3 attacker/scale.py --functions 300 --payload-priority 0 --out /tmp/scale_300.json
+
+python3 experiments/scale_eval.py --sample /tmp/scale_300.json --finding address \
+    --victims naive_raw,naive_hardened,crowbar-soft,crowbar-threshold \
+    --out results/scale_300_deepseek.json
+```
+
+- `naive_raw`: full code + raw tool findings, one prompt.
+- `naive_hardened`: full code + `DATA:`/quarantine evidence.
+- `crowbar-soft`: bounded soft budget (`--soft-total-budget`).
+- `crowbar-threshold`: `min_priority=1` + must-include.
+- Metrics: verdict, `payload_found`, `payload_in_context`, `false_positive`,
+  prompt/completion tokens, cost, HTTP status, truncation, coverage, must-include.
+
+### Real large sample (SQLite amalgamation)
+
+```bash
+python3 experiments/build_real_sample.py --pack upx
+# analyze the built binary with CrowbarAF, keep the state JSON, then:
+python3 experiments/scale_eval.py --from-state <state.json> \
+    --payload-url http://192.0.2.1:4444/gate.php --finding global
+```
+
+The real builder downloads the public-domain SQLite amalgamation, builds
+`sqlite_benign` and `sqlite_inj` (harmless constructor payload), and optionally
+packs them with UPX. Use `CROWBAR_MAX_DECOMPILE` / `CROWBAR_GHIDRA_TIMEOUT` for
+the large run.
+
+### Packed / encoded / CFF scale set
+
+```bash
+python3 attacker/scale.py --functions 300 --cff 2 --encoded --compile --pack upx \
+    --out /tmp/scale_packed.json
+```
+
 ## Quick start
 ```bash
 python3 attacker/generate.py            # generate + compile variants
