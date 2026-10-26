@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Victim 1: direct Ollama LLM. Analyzes the code and returns a JSON verdict."""
+"""Victim 1: direct LLM (Ollama or OpenAI-compatible API).
+
+Returns a JSON verdict. In API mode it uses the shared provider-agnostic client
+(OpenCode Go / vLLM / OpenAI-compatible), so the same victim runs local or remote.
+"""
 from __future__ import annotations
 
 import json
@@ -23,22 +27,31 @@ USER = (
 )
 
 
-def ask(model: str, code: str, num_ctx: int = 8192,
-        evidence: list[str] | None = None) -> str:
+def _build_user(code: str, evidence: list[str] | None) -> str:
     user = USER.format(code=code)
     if evidence:
         user += ("\n\nStatic tool output (strings extracted from the binary):\n"
                  "```\n" + "\n".join(evidence) + "\n```")
+    return user
+
+
+def _messages(user: str) -> list[dict]:
+    return [{"role": "system", "content": SYSTEM},
+            {"role": "user", "content": user}]
+
+
+def ask_meta(model: str, code: str, num_ctx: int = 8192,
+             evidence: list[str] | None = None) -> tuple[str, int | None, int | None]:
+    """Return (content, prompt_tokens, completion_tokens)."""
+    user = _build_user(code, evidence)
+
     if os.getenv("CROWBAR_LLM_PROVIDER", "ollama") != "ollama":
         from _client import make_client
-        messages = [{"role": "system", "content": SYSTEM},
-                    {"role": "user", "content": user}]
-        # Reasoning models can spend the whole budget on reasoning; retry empty content.
         client = make_client(model, num_ctx=num_ctx, num_predict=3000)
-        out = client.chat(messages, json_mode=True, temperature=0).content
-        if not (out or "").strip():
-            out = client.chat(messages, json_mode=False, temperature=0).content
-        return out
+        r = client.chat(_messages(user), json_mode=True, temperature=0)
+        if not (r.content or "").strip():
+            r = client.chat(_messages(user), json_mode=False, temperature=0)
+        return r.content, r.prompt_tokens, r.completion_tokens
 
     payload = {
         "model": model,
@@ -46,14 +59,18 @@ def ask(model: str, code: str, num_ctx: int = 8192,
         "format": "json",
         "think": False,
         "options": {"temperature": 0, "num_ctx": num_ctx, "num_predict": 1400},
-        "messages": [
-            {"role": "system", "content": SYSTEM},
-            {"role": "user", "content": user},
-        ],
+        "messages": _messages(user),
     }
     req = urllib.request.Request(
         OLLAMA, data=json.dumps(payload).encode(),
         headers={"Content-Type": "application/json"},
     )
     with urllib.request.urlopen(req, timeout=600) as resp:
-        return json.loads(resp.read())["message"]["content"]
+        data = json.loads(resp.read())
+    return (data.get("message", {}).get("content", ""),
+            data.get("prompt_eval_count"), data.get("eval_count"))
+
+
+def ask(model: str, code: str, num_ctx: int = 8192,
+        evidence: list[str] | None = None) -> str:
+    return ask_meta(model, code, num_ctx=num_ctx, evidence=evidence)[0]

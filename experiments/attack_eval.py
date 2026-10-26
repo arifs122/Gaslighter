@@ -33,7 +33,7 @@ sys.path.insert(0, os.path.join(ROOT, "attacker"))
 sys.path.insert(0, CROWBAR)
 
 import inflate  # noqa: E402
-from direct_llm import ask as naive_ask  # noqa: E402
+from direct_llm import ask_meta as naive_ask  # noqa: E402
 from llm_layer import Finding, FunctionInfo, LLMClient, analyze  # noqa: E402
 from _client import make_client  # noqa: E402
 
@@ -65,13 +65,15 @@ def _parse_json(raw: str) -> dict:
 def naive_victim(sample: dict, model: str) -> dict:
     t = time.time()
     try:
-        raw = naive_ask(model, sample["code"], num_ctx=NUM_CTX)
+        raw, ptok, ctok = naive_ask(model, sample["code"], num_ctx=NUM_CTX)
         obj = _parse_json(raw)
         text = (raw or "").lower()
         return {"ok": True, "time_s": round(time.time() - t, 1),
                 "suspicious": obj.get("suspicious"),
                 "payload_found": "192.0.2.1" in text,
-                "answer_chars": len(raw or "")}
+                "answer_chars": len(raw or ""),
+                "prompt_tokens": ptok, "completion_tokens": ctok,
+                "tokens": (ptok + ctok) if ptok is not None and ctok is not None else None}
     except urllib.error.HTTPError as exc:
         return {"ok": False, "time_s": round(time.time() - t, 1),
                 "error": f"HTTP {exc.code}", "overflow": exc.code == 400}
@@ -125,19 +127,21 @@ def main() -> None:
     samples = {k: inflate.build(k) for k in ("clean", "flood", "overflow")}
     results = {}
     print(f"model={args.model}  num_ctx={NUM_CTX}\n")
-    print(f"{'saldiri':<10}{'kurban':<12}{'chars':>9}{'~tok':>8}{'sure':>7}"
+    print(f"{'saldiri':<10}{'kurban':<18}{'chars':>9}{'~tok':>8}{'ptok':>8}{'sure':>7}"
           f"{'overflow':>9}{'payload?':>9}{'suspicious':>11}{'db-token':>9}")
-    print("-" * 82)
+    print("-" * 92)
     for kind, s in samples.items():
         n = naive_victim(s, args.model)
-        print(f"{kind:<10}{'naive':<12}{s['chars']:>9}{s['approx_tokens']:>8}"
+        print(f"{kind:<10}{'naive':<18}{s['chars']:>9}{s['approx_tokens']:>8}"
+              f"{str(n.get('prompt_tokens', '-')):>8}"
               f"{n.get('time_s', '-'):>7}{str(n.get('overflow', '-')):>9}"
               f"{str(n.get('payload_found', '-')):>9}{str(n.get('suspicious', n.get('error', '-'))):>11}"
               f"{'-':>9}")
         results[f"{kind}:naive"] = n
         for mode in modes:
             c = crowbar_victim(s, args.model, mode)
-            print(f"{kind:<10}{('crowbar-'+mode):<12}{s['chars']:>9}{s['approx_tokens']:>8}"
+            print(f"{kind:<10}{('crowbar-'+mode):<18}{s['chars']:>9}{s['approx_tokens']:>8}"
+                  f"{str(c.get('prompt_tokens', '-')):>8}"
                   f"{c['time_s']:>7}{'-':>9}{str(c['payload_found']):>9}"
                   f"{str(c['payload_suspicious']):>8}{c['tokens']:>9}")
             results[f"{kind}:crowbar-{mode}"] = c

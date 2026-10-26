@@ -39,6 +39,10 @@ on harmless samples are the **attacks**.
 - **API A/B (OpenCode Go, 2026-10-26):** `deepseek-v4.1-flash` blocks the #1
   injection and all paraphrase/base64/ROT13/split variants (verdict `malicious`);
   `billing_source=go`. See `results/paraphrase_injection_deepseek-v4.1-flash_p0.json`.
+- **Naive vs Crowbar on the API (2026-10-26):** accuracy is equal (3/3 payload),
+  but `threshold` uses 12.6×/67× fewer tokens on flood/overflow; `soft` is only
+  1.5×/4.3× cheaper and much slower. With a large-context API, Crowbar's value is
+  cost/scale, not detection. See `results/attack_eval_deepseek-v4.1-flash.json`.
 - Pending: realistic scale, REA as a victim, frontier model A/B.
 
 ## Attack variants
