@@ -39,12 +39,12 @@ from llm_layer.verdict import compute_verdict  # noqa: E402
 NUM_CTX = 32768
 PAYLOAD = "192.0.2.1"
 URL = "http://192.0.2.1:4444/gate.php"
-CONDITIONS = [
-    ("prio5", 5, None),
-    ("prio0", 0, None),
-    ("prio0_finding", 0, "address"),
-    ("prio0_finding_na", 0, "global"),
-]
+CONDITIONS = {
+    "prio5": (5, None),
+    "prio0": (0, None),
+    "prio0_finding": (0, "address"),
+    "prio0_finding_na": (0, "global"),
+}
 
 
 def findings_for(kind: str | None) -> list[Finding]:
@@ -107,40 +107,49 @@ def main() -> None:
     ap.add_argument("model", nargs="?", default="deepseek-v4.1-flash")
     ap.add_argument("--out")
     ap.add_argument("--victims", default="naive,soft,threshold")
+    ap.add_argument("--kinds", default="clean")
+    ap.add_argument("--conditions", default="prio5,prio0,prio0_finding,prio0_finding_na")
     args = ap.parse_args()
     victims = [v.strip() for v in args.victims.split(",") if v.strip()]
+    kinds = [k.strip() for k in args.kinds.split(",") if k.strip()]
+    conds = [c.strip() for c in args.conditions.split(",") if c.strip()]
 
-    base = inflate.build("clean")
-    print(f"model={args.model}  functions={len(base['functions'])}  chars={base['chars']}\n")
-    print(f"{'condition':<20}{'victim':<10}{'payload':>8}{'must':>5}{'susp':>6}"
+    print(f"model={args.model}  kinds={kinds}  conditions={conds}\n")
+    print(f"{'kind':<10}{'condition':<20}{'victim':<10}{'payload':>8}{'must':>5}{'susp':>6}"
           f"{'verdict':>14}{'cov':>6}{'tokens':>8}{'time':>7}")
-    print("-" * 88)
+    print("-" * 100)
 
     results: dict[str, dict] = {}
-    for name, prio, finding_kind in CONDITIONS:
-        sample = inflate.build("clean")
-        sample["functions"][0]["priority"] = prio
-        findings = findings_for(finding_kind)
-        row: dict[str, dict] = {}
-        for victim in victims:
-            if victim == "naive":
-                r = naive(sample, args.model)
-            else:
-                r = crowbar(sample, args.model, victim, findings)
-            row[victim] = r
-            print(f"{name:<20}{victim:<10}{str(r.get('payload', '-')):>8}"
-                  f"{len(r.get('must_include') or []):>5}"
-                  f"{str(r.get('payload_suspicious', '-')):>6}"
-                  f"{str(r.get('verdict', '-')):>14}"
-                  f"{str(r.get('coverage', '-')):>6}"
-                  f"{str(r.get('tokens', '-')):>8}{str(r.get('time_s', '-')):>7}")
-        results[name] = row
+    for kind in kinds:
+        base = inflate.build(kind)
+        print(f"  [{kind}] functions={len(base['functions'])} chars={base['chars']} "
+              f"~tok={base['approx_tokens']}")
+        for name in conds:
+            prio, finding_kind = CONDITIONS[name]
+            sample = inflate.build(kind)
+            sample["functions"][0]["priority"] = prio
+            findings = findings_for(finding_kind)
+            row: dict[str, dict] = {}
+            for victim in victims:
+                if victim == "naive":
+                    r = naive(sample, args.model)
+                else:
+                    r = crowbar(sample, args.model, victim, findings)
+                row[victim] = r
+                print(f"{kind:<10}{name:<20}{victim:<10}{str(r.get('payload', '-')):>8}"
+                      f"{len(r.get('must_include') or []):>5}"
+                      f"{str(r.get('payload_suspicious', '-')):>6}"
+                      f"{str(r.get('verdict', '-')):>14}"
+                      f"{str(r.get('coverage', '-')):>6}"
+                      f"{str(r.get('tokens', '-')):>8}{str(r.get('time_s', '-')):>7}")
+            results[f"{kind}:{name}"] = row
         print()
 
     if args.out:
         os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
         with open(args.out, "w", encoding="utf-8") as fh:
-            json.dump({"model": args.model, "results": results}, fh, ensure_ascii=False, indent=2)
+            json.dump({"model": args.model, "kinds": kinds, "conditions": conds,
+                       "results": results}, fh, ensure_ascii=False, indent=2)
         print(f"written: {args.out}")
 
 

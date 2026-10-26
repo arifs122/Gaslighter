@@ -51,6 +51,10 @@ on harmless samples are the **attacks**.
   priority-0 payload when a critical finding exists (address or value-in-code) at
   ~1.8–2× fewer tokens than naive; without any finding it still misses and soft is
   the safe default. See `results/priority_recall_deepseek-v4.1-flash_after_fix.json`.
+- **Scale after fix (DeepSeek):** threshold + must-include catches the priority-0
+  payload and keeps **13.5×** (flood) / **64.9×** (overflow) savings; without a
+  finding it misses and stays `unknown`. See
+  `results/priority_recall_scale_deepseek-v4.1-flash.json`.
 - Pending: realistic scale, REA as a victim, frontier model A/B.
 
 ## Attack variants
