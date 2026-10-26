@@ -43,6 +43,10 @@ on harmless samples are the **attacks**.
   but `threshold` uses 12.6×/67× fewer tokens on flood/overflow; `soft` is only
   1.5×/4.3× cheaper and much slower. With a large-context API, Crowbar's value is
   cost/scale, not detection. See `results/attack_eval_deepseek-v4.1-flash.json`.
+- **Priority-0 recall (DeepSeek, 2026-10-26):** threshold **misses** a payload whose
+  priority is 0 (unknown/needs_review, fail-closed); soft catches it at ~2.4k tokens.
+  A critical finding at the payload address does not rescue selection. See
+  `results/priority_recall_deepseek-v4.1-flash.json`.
 - Pending: realistic scale, REA as a victim, frontier model A/B.
 
 ## Attack variants
