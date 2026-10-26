@@ -57,6 +57,29 @@ on harmless samples are the **attacks**.
   `results/priority_recall_scale_deepseek-v4.1-flash.json`.
 - Pending: realistic scale, REA as a victim, frontier model A/B.
 
+
+## Loop
+
+```mermaid
+flowchart LR
+    A["Attacker<br/>obfuscation / injection / decoys"] --> B["Victim<br/>naive LLM / CrowbarAF / REA"]
+    B --> C["Measurement<br/>verdict · tokens · time · recovery"]
+    C --> D[(results)]
+    D --> E["Hardening<br/>CrowbarAF evidence channel"]
+    E --> B
+```
+
+## Ecosystem
+
+Gaslighter is the **attack + measurement** side of the project. The defense and
+the comparable experiment archive live in
+[CrowbarAF](https://github.com/Farhandir/CrowbarAF):
+
+- **Gaslighter** produces the attacks, runs the victims, and records raw results.
+- **CrowbarAF** holds the hardened pipeline, the fail-closed verdict, and
+  [`results/archive`](https://github.com/Farhandir/CrowbarAF/tree/master/results/archive).
+- The same dataset + config is reused for local, API and frontier A/B runs.
+
 ## Attack variants
 `clean`, `clean_inj`, `obf`, `obf_inj`, `obf_encinj`
 (obfuscation × {none, plain, encoded} injection).
