@@ -96,6 +96,7 @@ def crowbar(sample: dict, model: str, mode: str, findings: list[Finding]) -> dic
         "analyzed": len(res.summaries), "coverage": round(len(res.summaries) / max(1, len(fns)), 2),
         "verdict": v4["verdict"], "tokens": res.token_total(),
         "prompt_tokens": res.total_prompt_tokens,
+        "must_include": list(res.must_include),
         "fail_closed": v4["counts"]["fail_closed"],
         "time_s": round(time.time() - t, 1),
     }
@@ -111,9 +112,9 @@ def main() -> None:
 
     base = inflate.build("clean")
     print(f"model={args.model}  functions={len(base['functions'])}  chars={base['chars']}\n")
-    print(f"{'condition':<20}{'victim':<10}{'payload':>8}{'susp':>6}{'verdict':>14}"
-          f"{'cov':>6}{'tokens':>8}{'time':>7}")
-    print("-" * 82)
+    print(f"{'condition':<20}{'victim':<10}{'payload':>8}{'must':>5}{'susp':>6}"
+          f"{'verdict':>14}{'cov':>6}{'tokens':>8}{'time':>7}")
+    print("-" * 88)
 
     results: dict[str, dict] = {}
     for name, prio, finding_kind in CONDITIONS:
@@ -128,6 +129,7 @@ def main() -> None:
                 r = crowbar(sample, args.model, victim, findings)
             row[victim] = r
             print(f"{name:<20}{victim:<10}{str(r.get('payload', '-')):>8}"
+                  f"{len(r.get('must_include') or []):>5}"
                   f"{str(r.get('payload_suspicious', '-')):>6}"
                   f"{str(r.get('verdict', '-')):>14}"
                   f"{str(r.get('coverage', '-')):>6}"

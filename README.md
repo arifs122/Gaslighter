@@ -47,6 +47,10 @@ on harmless samples are the **attacks**.
   priority is 0 (unknown/needs_review, fail-closed); soft catches it at ~2.4k tokens.
   A critical finding at the payload address does not rescue selection. See
   `results/priority_recall_deepseek-v4.1-flash.json`.
+- **After the fix (must-include + Linux/call-graph priority):** threshold catches the
+  priority-0 payload when a critical finding exists (address or value-in-code) at
+  ~1.8–2× fewer tokens than naive; without any finding it still misses and soft is
+  the safe default. See `results/priority_recall_deepseek-v4.1-flash_after_fix.json`.
 - Pending: realistic scale, REA as a victim, frontier model A/B.
 
 ## Attack variants
