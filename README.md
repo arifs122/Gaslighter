@@ -151,6 +151,24 @@ python3 experiments/scale_eval.py --sample /tmp/scale_300.json --finding address
 - Metrics: verdict, `payload_found`, `payload_in_context`, `false_positive`,
   prompt/completion tokens, cost, HTTP status, truncation, coverage, must-include.
 
+### First S1 result (DeepSeek V4.1 Flash)
+
+Payload priority 0 + one critical FLOSS URL at the payload address:
+
+| functions | naive (full code) | soft | threshold | payload |
+|---:|---:|---:|---:|---|
+| 100 | 53,073 | 17,795 | **904** | 3/3 |
+| 300 | 162,072 | 18,617 | **904** | 3/3 |
+| 1,000 | **543,025** | 18,468 | **904** | 3/3 |
+| 2,000 | **HTTP 400** (~1.09M est.) | – | **929** | threshold ✅ |
+
+- Naive survives 543k tokens and dies at ~1.09M; threshold stays ~900 and
+  survives.
+- Soft is ~18k tokens but ~130 s; threshold is ~7–12 s.
+- **Without a critical finding**, threshold misses the priority-0 payload
+  (364 tokens, `unknown`); soft is the safe default.
+- `chars/4` underestimated by ~2×; the numbers above are real API usage.
+
 ### Real large sample (SQLite amalgamation)
 
 ```bash
