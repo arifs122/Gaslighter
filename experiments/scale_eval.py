@@ -134,7 +134,8 @@ def _parse_json(raw: str) -> dict:
 
 
 def crowbar_victim(sample: dict, model: str, mode: str,
-                   findings: list[Finding], soft_total_budget: int | None) -> dict:
+                   findings: list[Finding], soft_total_budget: int | None,
+                   threshold_total_budget: int | None = None) -> dict:
     fns = [FunctionInfo(offset=f["offset"], name=f.get("name", ""), c_code=f.get("c_code", ""),
                         priority=int(f.get("priority") or 0), callees=list(f.get("callees") or []),
                         iocs=list(f.get("iocs") or []))
@@ -148,6 +149,8 @@ def crowbar_victim(sample: dict, model: str, mode: str,
             kwargs["total_budget_tokens"] = soft_total_budget
     else:
         kwargs["min_priority"] = 1
+        if threshold_total_budget:
+            kwargs["total_budget_tokens"] = threshold_total_budget
     try:
         res = analyze(fns, findings, client, **kwargs)
     except Exception as exc:  # noqa: BLE001
@@ -194,10 +197,16 @@ def load_sample(args) -> tuple[dict, list[Finding]]:
                  for f in state.get("source_code", []) if (f.get("c_code") or "").strip()]
         code = "\n\n".join(f"/* {f['name']} @ {f['offset']} */\n{f['c_code']}" for f in funcs)
         findings = [Finding(**f) for f in state.get("findings", [])]
-        url = args.payload_url
+        url = None if args.benign else (args.payload_url or None)
         off = args.payload_offset
         if url and not off:
             off = next((f["offset"] for f in funcs if url in (f["c_code"] or "")), None)
+        if url and not off:
+            off = next((f["offset"] for f in funcs
+                        if any(url.lower() in str(x).lower() for x in (f.get("iocs") or []))), None)
+        if url and not off and args.payload_name:
+            off = next((f["offset"] for f in funcs
+                        if args.payload_name.lower() in (f.get("name") or "").lower()), None)
         return ({"kind": "state", "functions": funcs, "code": code, "chars": len(code),
                  "payload_url": url, "has_payload": bool(url and off),
                  "payload_offset": off, "n_functions": len(funcs)}, findings)
@@ -209,6 +218,10 @@ def load_sample(args) -> tuple[dict, list[Finding]]:
 
     sample = scale.build(args.functions, args.payload_priority, args.cff,
                          args.encoded, args.benign, args.seed)
+    if args.benign:
+        sample["has_payload"] = False
+        sample["payload_url"] = None
+        sample["payload_offset"] = None
     return sample, []
 
 
@@ -219,6 +232,7 @@ def main() -> None:
     ap.add_argument("--from-state", help="pipeline state JSON")
     ap.add_argument("--payload-url", default=PAYLOAD_URL)
     ap.add_argument("--payload-offset")
+    ap.add_argument("--payload-name", default="crowbar_payload")
     ap.add_argument("--functions", type=int, default=100)
     ap.add_argument("--payload-priority", type=int, default=0)
     ap.add_argument("--cff", type=int, default=1, choices=(1, 2, 3))
@@ -228,6 +242,7 @@ def main() -> None:
     ap.add_argument("--finding", choices=("none", "address", "global"), default="none")
     ap.add_argument("--victims", default="naive_raw,crowbar-threshold")
     ap.add_argument("--soft-total-budget", type=int, default=8000)
+    ap.add_argument("--threshold-total-budget", type=int, default=12000)
     ap.add_argument("--runs", type=int, default=1)
     ap.add_argument("--out")
     args = ap.parse_args()
@@ -255,7 +270,8 @@ def main() -> None:
                 r = naive_victim(sample, args.model, mode, ev)
             else:
                 mode = "soft" if victim.endswith("soft") else "threshold"
-                r = crowbar_victim(sample, args.model, mode, findings, args.soft_total_budget)
+                r = crowbar_victim(sample, args.model, mode, findings,
+                                   args.soft_total_budget, args.threshold_total_budget)
             r["victim"] = victim
             runs.append(r)
         results[victim] = runs

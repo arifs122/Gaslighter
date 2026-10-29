@@ -1,0 +1,8236 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "sample": {
+    "payload_url": null,
+    "has_payload": false,
+    "payload_offset": null,
+    "n_functions": 100,
+    "chars": 164354
+  },
+  "findings": [
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x200f04a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x200f8d3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x200fb3d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x200fccb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20102c2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2010f38",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201257f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20136cd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201406a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2014d01",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2014da2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20167da",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20168c6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2016ce2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201a167",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201a43e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201a4cc",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201b388",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201b81e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "encrypt data using Salsa20 or ChaCha",
+      "address": "0x201b81e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create thread",
+      "address": "0x201bc6b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201be41",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201bef0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201bfa6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201c963",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201caa6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "calculate modulo 256 via x86 assembly",
+      "address": "0x201ce30",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201d320",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201d454",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201d66b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201d79d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201d82a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201d909",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201e056",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201e472",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201e618",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201e6b7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201e9ea",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201eb74",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201ee49",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201f49a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201f576",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201fbef",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x201fcce",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202003d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "encrypt data using RC4 PRGA",
+      "address": "0x202003d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20203e0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202046f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2020579",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20205fd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2020746",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2020877",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2020cc7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2020e72",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2020ef1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2020fbd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20211b2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2021351",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20214af",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "set file attributes",
+      "address": "0x20223b3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2022545",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2022769",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2022820",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20228f3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2022d15",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "get system information on Linux",
+      "address": "0x202333b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202360c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2023cc5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202425a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2024601",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2024d96",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2024f07",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2025034",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2025295",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "get current PID on Linux",
+      "address": "0x2025589",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "get current PID on Linux",
+      "address": "0x20255ae",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2025cb0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2026013",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20262f4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "get current PID on Linux",
+      "address": "0x20262f4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20265b8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2026685",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2026f98",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20275cf",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2027cf3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2027e78",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20281aa",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20283a6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2028417",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2028c67",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20290d0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2029104",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2029158",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202929d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20293cc",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202948b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2029672",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202981a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20298c1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20299bb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2029f85",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202a118",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202a1b9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202a261",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202a9a0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202ab3b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202ae3e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202b052",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202b131",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202b2c3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202b37b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202b44f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202b5ab",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202b90f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202bc15",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202bce3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202c0a6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202c591",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202c838",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202c8f7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202d062",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202d51d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202daae",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202e147",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202e1e0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202e5c2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202ef15",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202f1c5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202f6f1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202fc2f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x202fcb7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2030534",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2031773",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2032253",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203251b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2033419",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2033ce1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2033df7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2033f51",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20346fe",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203497d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2034b17",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2034cbe",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2034f21",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20352fa",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2035388",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2035459",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2036042",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20363cd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20367d7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20368be",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2036c6f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2036e4c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203711b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20372f6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2038099",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20381a4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203824a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2038333",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2038402",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20384e5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20385c1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2038639",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203867e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2038818",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20389fc",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2038a90",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20392ed",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20395f2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203976b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2039866",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203996a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20399ba",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2039c6c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203a29d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203a4f5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203aba0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203ade5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203b67f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203c19f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203d0c9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203d5d3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203d757",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203dbaa",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203de4b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203e08b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203e5e3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203e9e4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203ec37",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203eef0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203f0e3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203fb4d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203fdbb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x203fe55",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20400ad",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2040583",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20405f0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2040cd8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2040d7f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x204102c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2041292",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2041fe2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20421ba",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20431d2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2043349",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20436d0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2043938",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2043c5e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20440c3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20445f7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2046898",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2046910",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2046c30",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2046da7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20478df",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2047d57",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2048468",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2048819",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2048bf7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2049020",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20496fb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2049977",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2049a54",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2049bb9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x204a735",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x204b761",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x204ba45",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x204c278",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x204c42b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x204c502",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x204d314",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x204e198",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x204ea35",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x204fd35",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2050300",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x205059e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2050606",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2050868",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2050e1a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2051966",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2051a22",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2051afa",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2051b4e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2051c9a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2052015",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2052b65",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2052ced",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2052f93",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20537d2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "calculate modulo 256 via x86 assembly",
+      "address": "0x2053ac5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2054215",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20542e4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2054a97",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2054e79",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2055554",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2055f31",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20565bc",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2056885",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2056bb7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20572ba",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20580b6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20581a3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20584a7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2058a61",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2058acc",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x205a018",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x205a5f8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x205a693",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x205b2f3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x205ba9f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2068de7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2069ba7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2069e66",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206a65f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "encrypt data using RC4 PRGA",
+      "address": "0x206a65f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206abe7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206af0d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206b0c6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206b145",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206b20a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206b2f9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206b45d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206b74b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206b8c3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206bbf9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206befb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206c0e4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206c428",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206c630",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206ca32",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206d075",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206d3ae",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206d4ca",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206d4ff",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206d6ab",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206d903",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206df2d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206e07d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206e211",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206e255",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206e416",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206e61b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206e8bd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206e9d1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206eb51",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206ed3d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206edfa",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206f1c4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x206f67a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2070e49",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2070f02",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2071fe9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20720a0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2072232",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2072638",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2072853",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2072a75",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207344d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2073889",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2073a08",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2073d25",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2073d5c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2073dc3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20747f1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2074d50",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2074db6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2075493",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2075d87",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2076144",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20761ad",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20765f9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2076919",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2076b02",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2076e7d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2076f56",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207742a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2077854",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207793e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2077ab1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20780fc",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207827d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20783e9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20785a5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2078755",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207886f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2078a06",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2078a9d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2078cf3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207961c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2079804",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207994f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207a89a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207bbb7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207c214",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207c456",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207e783",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207ecba",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207f0fa",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207f639",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x207fd7d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20801ed",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208037f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20807db",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2080b8f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2080d91",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2080efd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2081444",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208168d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2081d9a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x2082064",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20826eb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x20826eb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2082c0c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2083395",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208344f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20835fe",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208364e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208391b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2083a0f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2083a5f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2083c3c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2083eea",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2083fb6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20841b0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20845af",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2084617",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2084bb0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2084d56",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2084e40",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2085897",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2085975",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2086139",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20868c5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20869c8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2086d85",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2087491",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2087514",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2087722",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20877e2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2087c64",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20882dd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x20883e1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208856e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x2088730",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2088979",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2088d2b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2088e31",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2089009",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2089abc",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2089cad",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2089ebf",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208a35d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208a611",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208a67b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208aeea",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208b518",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208b97c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208bccd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208c002",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208c238",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208c2e8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208cb72",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208d21f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208d383",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208d48b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208d5dd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208d6f3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208dbf7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208dc67",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208dd43",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208e086",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208e3f4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208e436",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208e492",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208e4fc",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208efd1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208f50a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208f5f9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208fae5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208fdce",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x208ff79",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2090345",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209038a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209053b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209097b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20909df",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2090a59",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2090afe",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2090b42",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2090bf6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2090ca6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20914c3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2091704",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209240b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2092b80",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2092c60",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2092e0b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2092ed7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2092fb9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209366d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2094216",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20942ec",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2095cb6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20962a3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209630c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2096366",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2096733",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2096867",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2096fa0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2097103",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2097542",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2097769",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20979dd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2097a4f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2097e20",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2098116",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20982c2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2098485",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2098a21",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2098a8d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2098c34",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2098ee6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2099671",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209a6c4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209aaab",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209acad",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209af4f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209b100",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209b419",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209b77e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209bcb2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209bd98",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209c04f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209c9df",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209cc34",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209ccd7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209d1cd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209d3de",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209d4f8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209d59a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209d847",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209db74",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209df22",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209eda8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209f2a0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209f5ac",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209f92d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x209fff8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a05d8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a06b9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a086d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a08fa",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a0a9f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a1259",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a1409",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a1585",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a20f9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a21c5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a23e1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a2570",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a27f2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a297b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a2d0b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a2f2a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a3126",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a3368",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a3880",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a58f1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a782b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a7a9a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a7ca6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a7fa3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a9018",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a9458",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a9b6d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a9c57",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a9d63",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a9e81",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20a9fb3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20aa380",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20aa4e1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20aa608",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20aa6cf",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b0783",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b0acd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b0d02",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b0e32",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b13ae",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b18d3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b200d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b21a0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b2321",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b2371",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b2625",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b2c0b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b2f3f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b3254",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b372f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b375c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b3944",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b3aa5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b3bba",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b3c93",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b3dc8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b4c4a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b4f3c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b5c64",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b5df2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b653c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b6813",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b68eb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b6c32",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b70d4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b76d0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b7b0f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b7baf",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b7d57",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b84ca",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b85d7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20b930a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ba1e6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ba715",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ba7a1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20baa31",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bacec",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bad1d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bade5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bbce6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bbeca",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bbfeb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bc25a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bc417",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bc88b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bccf7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bcdae",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bd150",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bd2a8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bdae7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bdc22",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bdc93",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20befb4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bf194",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bf27b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bf417",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bf4f2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bf7b2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20bfa9e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c042c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c05da",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c09f9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c0aef",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c0c8d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c0f79",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c1218",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c1415",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c14ad",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c48aa",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c4daa",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c4e2f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c4f1f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c5907",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c5e7b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c661c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c694e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c6a4c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c6b1e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c6e54",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c7157",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c7295",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c7781",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c7b4e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c80a3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c823d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c8349",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c86db",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20c8abf",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cb0df",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cb8b4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cb9a1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cbb7f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cc0c5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cc143",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cc188",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cc48c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cc840",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x20cc840",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cd4ef",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cd691",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cd763",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cd80f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cd888",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cd8e7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cdfe5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cea16",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cee96",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ceff4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cf0ec",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cf20a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cf370",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cf713",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cfae6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cfde1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20cff72",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d070c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d0a08",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d0b18",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d0bc3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d0c62",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d0d6d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d1114",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d1771",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d1b58",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d1ce6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d1deb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d1eb3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d20e2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d2224",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d591d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d651f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d6b0a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d6fc0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "encrypt data using RC4 PRGA",
+      "address": "0x20d6fc0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d71ca",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d7cec",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d7f10",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d8098",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d8193",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d98d6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d9afc",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20d9e7e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20da1a7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20da21c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20da263",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20da5e2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20da76c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20da90f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20dabfe",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20db1f2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20db322",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20db4c1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20db6b2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20db811",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20db9db",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20dc609",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20dcb3d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20dcba7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20dd5c5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ddc81",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ddd3a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ddef9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20de044",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20de1cb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20de3f8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20de54c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20de91a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20deb88",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20dfd0f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20dfed5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e001e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e00ba",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e01d5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e031b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e038c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e0617",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e134d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e1399",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e1d35",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e1daf",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e2276",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e2902",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e2c36",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e2e95",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e3e01",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e4174",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e4f5a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e5045",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e55e5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e595d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e5a9b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e5cba",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e5d79",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e740e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e8e12",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e8e90",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e93fc",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e989f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20e9af4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ea518",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20eac7f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20eb2db",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20eb397",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20eb89f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20eba97",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ebe8b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ec2c5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ec459",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ed083",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ed1d0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ee49e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ee863",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20eefd1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ef06b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ef1be",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f5568",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f5727",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f5a43",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f675f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f6d57",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f8267",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f8645",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f86ed",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f87e2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f8d90",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f8fbe",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f90a7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f91b9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f9238",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f93ab",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f94ca",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f987b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "calculate modulo 256 via x86 assembly",
+      "address": "0x20f9a5a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20f9de7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20fab7f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20fb09f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20fb372",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "parse credit card information",
+      "address": "0x20fb372",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20fbc4b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20fbcdb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20fc769",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20fc804",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20fe123",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20fe1c8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20fe3f1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20fe5ad",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20fe7d7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20fe93d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20feb09",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ff56b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x20ffeff",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2101390",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21027e7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2103c9b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2103cea",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210405d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21042b2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21045bd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21046d2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2104a99",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2104deb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2106cbb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21070b7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21076c2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2107925",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2107995",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2107fb5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2108905",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2108b3b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2109243",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2109683",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21098fc",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210a1c0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210a3f7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210a7d0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210ae0f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210b50c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210ba21",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210ba95",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210baef",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210bc24",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210c2a4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210c593",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210c652",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210c739",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210c8b9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210cb4a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210d412",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210d688",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210d84a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210e3a5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210e40b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210e608",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210ea84",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210ed7e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210ef75",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210f0af",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210f16c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210f29e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210f361",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210f4c7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210f669",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210fc0f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x210fee6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21116a1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2111724",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21122d2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2112390",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211246a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2112688",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2113d85",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x21140a4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2114107",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x21141a7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2114361",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x21143a2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x21143e5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2114440",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2114495",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x21144dc",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2114532",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2114573",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x21145c2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x211461a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x211466c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x21146df",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x211473e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2114794",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x21147e5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21148d8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "encrypt data using speck",
+      "address": "0x21148d8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211667c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21167f7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2116dfd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "hash data using SHA1",
+      "address": "0x211925c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21192ba",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21194f9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211989d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211a019",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211a377",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211aaa9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211aca0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211ae8a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211b0ef",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211b51a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211b815",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "encrypt data using RC4 PRGA",
+      "address": "0x211b815",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211bb95",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211bce1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211c50d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211c678",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "encode data using Base64",
+      "address": "0x211c678",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211c86e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211c8c5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211ce25",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211ce93",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211ced5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211d13f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211d335",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211d8b4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211dde1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211deb7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211e134",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211e876",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211f498",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211f9ab",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x211fe5f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2120873",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2120aff",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2120d98",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2120e8a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2121606",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "read file on Linux",
+      "address": "0x2121b9c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create or open file",
+      "address": "0x2121bc1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2121eb5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create directory",
+      "address": "0x2121eb5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create directory",
+      "address": "0x212205d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "delete file on Linux",
+      "address": "0x21220ed",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "change file permission on Linux",
+      "address": "0x21221b0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create or open file",
+      "address": "0x2122209",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2122271",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "change file permission on Linux",
+      "address": "0x21222d0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "set file attributes",
+      "address": "0x2122344",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212256e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21227f3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21229f9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21232ca",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2123734",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2123df7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x2123df7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2124400",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21246c9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212491d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2124f39",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21258fa",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2125985",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21259fe",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2125bd7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2125f8a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2126294",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x2126790",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21268ba",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2126fcb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2127263",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212758e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x212758e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212792a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2127977",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2127ad1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2127b60",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2127ba5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2127c21",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2127c8d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2127cd2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2127d17",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2128142",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21282ab",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x21282ab",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21286ab",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x2128745",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21288fd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x21288fd",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x2129196",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212925a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2129915",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x2129915",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212a010",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x212a010",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212a29c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x212a29c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212a6b8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212a901",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212aaa5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212b0aa",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x212b0aa",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x212b646",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212b7ef",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212b967",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x212be30",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212beb6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x212beb6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212c88f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212d130",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x212ffd8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x21308b1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213106e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x213106e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2132a0c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2132aa4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2132b16",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "terminate process",
+      "address": "0x2132b1d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2132b5c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create or open file",
+      "address": "0x2132db7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2132dd9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "read file on Linux",
+      "address": "0x2132dd9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "query environment variable",
+      "address": "0x2132f3e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "query environment variable",
+      "address": "0x21330ce",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "get hostname",
+      "address": "0x2133257",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "query environment variable",
+      "address": "0x21332c1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2133328",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "calculate modulo 256 via x86 assembly",
+      "address": "0x2133447",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "calculate modulo 256 via x86 assembly",
+      "address": "0x2133462",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "calculate modulo 256 via x86 assembly",
+      "address": "0x213346e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213368c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "parse credit card information",
+      "address": "0x213368c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "query environment variable",
+      "address": "0x213368c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21342bf",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213441a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21346a4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21348ae",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2134998",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2134d74",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21359d1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2135d9e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21365a3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "execute command",
+      "address": "0x21365a3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "query environment variable",
+      "address": "0x21365a3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "read file on Linux",
+      "address": "0x21365a3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write and execute a file",
+      "address": "0x21365a3",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create or open file",
+      "address": "0x2136770",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x21367e9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x213685e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create or open file",
+      "address": "0x213693b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "delete file on Linux",
+      "address": "0x2136b3b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2136b88",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2136c15",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2136d9c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2136fd8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2137325",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21375f9",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21376c0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2137f99",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x2138079",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21381c6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2138394",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2138701",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "get current PID on Linux",
+      "address": "0x2138701",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "read file on Linux",
+      "address": "0x2138701",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create or open file",
+      "address": "0x2138763",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213889c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2138a0e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21396fa",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x21396fa",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2139b15",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2139d42",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213a07d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213a937",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213a99e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x213a99e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213ae9c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213bad6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213bb43",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "read file on Linux",
+      "address": "0x213c07b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create or open file",
+      "address": "0x213c0a0",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "check file permission on Linux",
+      "address": "0x213c366",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "read file on Linux",
+      "address": "0x213c366",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create or open file",
+      "address": "0x213c409",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213c6cb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "read file on Linux",
+      "address": "0x213c6cb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create or open file",
+      "address": "0x213c763",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "check file permission on Linux",
+      "address": "0x213ce77",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "query environment variable",
+      "address": "0x213ce77",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213d912",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213dbb7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create or open file",
+      "address": "0x213de47",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213de7f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "read file on Linux",
+      "address": "0x213e0f6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213e222",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213e605",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213e6f5",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213ec7b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x213ec7b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "check file permission on Linux",
+      "address": "0x213f0f2",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "execute command",
+      "address": "0x213f31f",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213f6a8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x213fe45",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x214033d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "check file permission on Linux",
+      "address": "0x21404f6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21404f6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "delete file on Linux",
+      "address": "0x214050a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2140571",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21408be",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2140ccb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x2140ccb",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x214167e",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x214184d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x2141cc1",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2141e87",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x214216b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "read file on Linux",
+      "address": "0x214216b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x214216b",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create process on Linux",
+      "address": "0x21429b8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create or open file",
+      "address": "0x2142cb8",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2143b4c",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2146bca",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write and execute a file",
+      "address": "0x2146bca",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2146e09",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create process on Linux",
+      "address": "0x214729d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21474b6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "read file on Linux",
+      "address": "0x21474b6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2147661",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2147c8d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2147ccf",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2147cf4",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2147d59",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21480bf",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2148406",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2148850",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "execute command",
+      "address": "0x2148850",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference SQL statements",
+      "address": "0x2148850",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "set current directory",
+      "address": "0x2148850",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "set registry value",
+      "address": "0x2148850",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create process on Linux",
+      "address": "0x214e737",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21538ac",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x21541b6",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "get current user on Linux",
+      "address": "0x2154981",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "query environment variable",
+      "address": "0x2154981",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "get password database entry on Linux",
+      "address": "0x21549df",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "check file permission on Linux",
+      "address": "0x2154a88",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "query environment variable",
+      "address": "0x2154a88",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "create or open file",
+      "address": "0x2154c8d",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "terminate process",
+      "address": "0x2154d87",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "check file permission on Linux",
+      "address": "0x2155061",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "contain loop",
+      "address": "0x2155061",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "query environment variable",
+      "address": "0x2155061",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "read file on Linux",
+      "address": "0x2155061",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "terminate process",
+      "address": "0x2155061",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "get current PID on Linux",
+      "address": "0x21551ac",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x215569a",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x2156047",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "write file on Linux",
+      "address": "0x21579c7",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "linked against sqlite3",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "rule",
+      "value": "reference Base64 string",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "attack",
+      "value": "T1222 - File and Directory Permissions Modification (Defense Evasion)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "attack",
+      "value": "T1027 - Obfuscated Files or Information (Defense Evasion)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "attack",
+      "value": "T1082 - System Information Discovery (Discovery)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "attack",
+      "value": "T1213 - Data from Information Repositories (Collection)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "attack",
+      "value": "T1033 - System Owner/User Discovery (Discovery)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0058 - Modulo (Data)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0052 - Writes File (File System)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0016 - Create File (File System)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0038 - Create Thread (Process)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0050 - Set File Attributes (File System)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0047 - Delete File (File System)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0017 - Create Process (Process)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0027.009 - Encrypt Data::RC4 (Cryptography)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0021.004 - Generate Pseudo-random Sequence::RC4 PRGA (Cryptography)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0019 - Check String (Data)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "E1027.m05 - Obfuscated Files or Information::Encryption-Standard Algorithm (Defense Evasion)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0029.002 - Cryptographic Hash::SHA1 (Cryptography)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "E1027.m02 - Obfuscated Files or Information::Encoding-Standard Algorithm (Defense Evasion)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0026.001 - Encode Data::Base64 (Data)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0051 - Read File (File System)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0046 - Create Directory (File System)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0018 - Terminate Process (Process)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "E1082 - System Information Discovery (Discovery)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "B0023 - Install Additional Program (Execution)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "capa",
+      "kind": "behavior",
+      "value": "C0036.001 - Registry::Set Registry Key (Operating System)",
+      "address": "",
+      "confidence": 1.0
+    },
+    {
+      "source": "imphash",
+      "kind": "grouping_key",
+      "value": "6c1ae700a5c3a1b4ecd6a67859f53ab9",
+      "address": "",
+      "confidence": 1.0
+    }
+  ],
+  "results": {
+    "naive_raw": [
+      {
+        "payload_url": null,
+        "has_payload": false,
+        "payload_offset": null,
+        "n_functions": 100,
+        "chars": 164354,
+        "ok": true,
+        "suspicious": false,
+        "verdict": "no_evidence",
+        "payload_found": false,
+        "payload_in_context": false,
+        "false_positive": false,
+        "prompt_tokens": 69204,
+        "completion_tokens": 1415,
+        "cost_usd": 0,
+        "billing_source": "go",
+        "allowance": 0.0084222,
+        "finish_reason": "stop",
+        "truncated": false,
+        "http_status": 200,
+        "time_s": 12.8,
+        "victim": "naive_raw"
+      }
+    ],
+    "crowbar-threshold": [
+      {
+        "payload_url": null,
+        "has_payload": false,
+        "payload_offset": null,
+        "n_functions": 100,
+        "chars": 164354,
+        "ok": true,
+        "verdict": "malicious",
+        "payload_found": false,
+        "payload_fn_suspicious": null,
+        "payload_in_context": false,
+        "false_positive": true,
+        "analyzed": 32,
+        "coverage": 0.32,
+        "must_include": [],
+        "prompt_tokens": 19925,
+        "completion_tokens": 11947,
+        "cost_usd": 0.0,
+        "billing_source": "go",
+        "allowance": 0.007391939999999999,
+        "truncated": false,
+        "http_status": 200,
+        "failures": [],
+        "time_s": 126.8,
+        "victim": "crowbar-threshold"
+      }
+    ]
+  }
+}

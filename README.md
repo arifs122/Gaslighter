@@ -169,6 +169,20 @@ Payload priority 0 + one critical FLOSS URL at the payload address:
   (364 tokens, `unknown`); soft is the safe default.
 - `chars/4` underestimated by ~2×; the numbers above are real API usage.
 
+### S2/S3 real SQLite (A policy)
+
+| sample | naive | crowbar-threshold |
+|---|---|---|
+| benign | `no_evidence` · 53,505 tok · 23 s | **`needs_review`** · 19,329 tok · 196 s · FP=false |
+| injected | `malicious` · payload ✅ · 53,940 tok · 16 s | **`malicious`** · payload ✅ · 19,381 tok · 218 s |
+
+- Before A, benign SQLite was `malicious` because 1,141 generic capa rules
+  (`contain loop`) were treated as high-authority. After A it is `needs_review`.
+- Threshold is 2.8× cheaper but ~13× slower on 100 functions; parallelize
+  `CROWBAR_LLM_MAX_WORKERS` before judging latency.
+- Benign still asks for review (56 medium capa/import/IoC signals); option C
+  (two-signal corroboration) is the next precision step if needed.
+
 ### Real large sample (SQLite amalgamation)
 
 ```bash
