@@ -39,6 +39,13 @@ NUM_CTX = 32768
 PAYLOAD_URL = "http://192.0.2.1:4444/gate.php"
 
 
+def finding_from_record(rec: dict) -> Finding:
+    """State JSON stores address-less findings as ""; the LLM layer uses None."""
+    data = dict(rec)
+    data["address"] = data.get("address") or None
+    return Finding(**data)
+
+
 def naive_verdict(suspicious) -> str:
     if suspicious is True:
         return "malicious"
@@ -170,7 +177,9 @@ def crowbar_victim(sample: dict, model: str, mode: str,
     return {
         **_base(sample), "ok": True,
         "verdict": v4["verdict"],
-        "payload_found": bool(sample.get("payload_url") and sample["payload_url"] in text),
+        "payload_found": bool(sample.get("payload_url") and (
+            sample["payload_url"] in text
+            or (payload is not None and payload.suspicious is True))),
         "payload_fn_suspicious": payload.suspicious if payload else None,
         "payload_in_context": bool(payload_off and
                                    (payload_off in res.summaries or payload_off in res.must_include)),
@@ -197,7 +206,7 @@ def load_sample(args) -> tuple[dict, list[Finding]]:
                   "iocs": f.get("iocs", [])}
                  for f in state.get("source_code", []) if (f.get("c_code") or "").strip()]
         code = "\n\n".join(f"/* {f['name']} @ {f['offset']} */\n{f['c_code']}" for f in funcs)
-        findings = [Finding(**f) for f in state.get("findings", [])]
+        findings = [finding_from_record(f) for f in state.get("findings", [])]
         url = None if args.benign else (args.payload_url or None)
         off = args.payload_offset
         if url and not off:
@@ -214,7 +223,7 @@ def load_sample(args) -> tuple[dict, list[Finding]]:
 
     if args.sample:
         sample = json.load(open(args.sample, encoding="utf-8"))
-        findings = [Finding(**f) for f in sample.get("findings", [])]
+        findings = [finding_from_record(f) for f in sample.get("findings", [])]
         return sample, findings
 
     sample = scale.build(args.functions, args.payload_priority, args.cff,
