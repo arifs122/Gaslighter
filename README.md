@@ -173,13 +173,13 @@ Payload priority 0 + one critical FLOSS URL at the payload address:
 
 | sample | naive | crowbar-threshold |
 |---|---|---|
-| benign | `no_evidence` · 53,505 tok · 23 s | **`needs_review`** · 19,329 tok · 196 s · FP=false |
-| injected | `malicious` · payload ✅ · 53,940 tok · 16 s | **`malicious`** · payload ✅ · 19,381 tok · 218 s |
+| benign | `no_evidence` · 53,505 tok · 23 s | **`needs_review`** · 19.3k tok · 196 s → **54 s** (8 workers) · FP=false |
+| injected | `malicious` · payload ✅ · 53,940 tok · 16 s | **`malicious`** · payload ✅ · 19.0k tok · 218 s → **66 s** (8 workers) |
 
 - Before A, benign SQLite was `malicious` because 1,141 generic capa rules
   (`contain loop`) were treated as high-authority. After A it is `needs_review`.
-- Threshold is 2.8× cheaper but ~13× slower on 100 functions; parallelize
-  `CROWBAR_LLM_MAX_WORKERS` before judging latency.
+- Threshold is 2.8× cheaper; at 1 worker it is ~13× slower, but **8 workers cut it
+  to 66 s / 54 s** with the same verdicts and payload result.
 - Benign still asks for review (56 medium capa/import/IoC signals); option C
   (two-signal corroboration) is the next precision step if needed.
 

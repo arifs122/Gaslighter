@@ -135,14 +135,15 @@ def _parse_json(raw: str) -> dict:
 
 def crowbar_victim(sample: dict, model: str, mode: str,
                    findings: list[Finding], soft_total_budget: int | None,
-                   threshold_total_budget: int | None = None) -> dict:
+                   threshold_total_budget: int | None = None,
+                   max_workers: int = 1) -> dict:
     fns = [FunctionInfo(offset=f["offset"], name=f.get("name", ""), c_code=f.get("c_code", ""),
                         priority=int(f.get("priority") or 0), callees=list(f.get("callees") or []),
                         iocs=list(f.get("iocs") or []))
            for f in sample.get("functions", [])]
     client = make_client(model, num_ctx=NUM_CTX, num_predict=900)
     t = time.time()
-    kwargs = dict(budget_tokens=1500, max_workers=1)
+    kwargs = dict(budget_tokens=1500, max_workers=max(1, max_workers))
     if mode == "soft":
         kwargs["low_priority_budget"] = 400
         if soft_total_budget:
@@ -243,6 +244,7 @@ def main() -> None:
     ap.add_argument("--victims", default="naive_raw,crowbar-threshold")
     ap.add_argument("--soft-total-budget", type=int, default=8000)
     ap.add_argument("--threshold-total-budget", type=int, default=12000)
+    ap.add_argument("--max-workers", type=int, default=1)
     ap.add_argument("--runs", type=int, default=1)
     ap.add_argument("--out")
     args = ap.parse_args()
@@ -271,7 +273,8 @@ def main() -> None:
             else:
                 mode = "soft" if victim.endswith("soft") else "threshold"
                 r = crowbar_victim(sample, args.model, mode, findings,
-                                   args.soft_total_budget, args.threshold_total_budget)
+                                   args.soft_total_budget, args.threshold_total_budget,
+                                   args.max_workers)
             r["victim"] = victim
             runs.append(r)
         results[victim] = runs
