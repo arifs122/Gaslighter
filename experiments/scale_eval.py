@@ -172,7 +172,11 @@ def crowbar_victim(sample: dict, model: str, mode: str,
     if payload:
         text = " ".join([payload.summary or ""] + list(payload.behaviors or [])
                         + [c.text for c in payload.claims] + [c.evidence for c in payload.claims])
-    v4 = compute_verdict(fns, findings, res.summaries, analysis_failures=res.failures)
+    two_signal = os.getenv("CROWBAR_TWO_SIGNAL_MALICIOUS", "1").strip().lower() \
+        not in ("0", "false", "no", "off")
+    v4 = compute_verdict(fns, findings, res.summaries,
+                         analysis_failures=res.failures,
+                         require_two_signals=two_signal)
     failures = " ".join(res.failures)
     return {
         **_base(sample), "ok": True,

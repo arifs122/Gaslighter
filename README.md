@@ -169,22 +169,24 @@ Payload priority 0 + one critical FLOSS URL at the payload address:
   (364 tokens, `unknown`); soft is the safe default.
 - `chars/4` underestimated by ~2×; the numbers above are real API usage.
 
-### S2/S3 real SQLite (A policy, evidence-corrected)
+### S2/S3 real SQLite (A+C, global digest)
 
 | sample | naive | crowbar-threshold |
 |---|---|---|
-| benign | `no_evidence` · 53,505 tok · 29 s | **`needs_review`** · 36.8k tok · 104 s (8 workers) · FP=false |
-| injected | `malicious` · payload ✅ · 53,940 tok · 19 s | **`malicious`** · payload ✅ · 36.6k tok · 92 s (8 workers) |
+| benign | `no_evidence` · 53,505 tok · 17 s | **`needs_review`** · 30.8k tok · 108 s (8 workers) · FP=false |
+| injected | `malicious` · payload ✅ · 53,940 tok · 14 s | **`malicious`** · payload ✅ · 34.4k tok · 110 s (8 workers) |
 
 - Before A, benign SQLite was `malicious` because 1,141 generic capa rules
   (`contain loop`) were treated as high-authority. After A it is `needs_review`.
 - Earlier 19.3k / 19.0k numbers were measured while `address=""` global findings
   were silently dropped from the prompt (see `~/Desktop/CrowbarAF/docs/EVIDENCE-CHANNEL.md` §11.1).
-  Corrected threshold is **1.47× cheaper** than naive, not 2.8×; 8 workers still
-  keep it under ~104 s.
+  With evidence present, threshold is **1.74× / 1.57× cheaper** than naive
+  (not 2.8×). Soft is 22.7k / 25.8k.
+- Global digest now collapses medium globals to one count line; local findings
+  include address/value/iocs matches. Policy C requires two independent signals
+  for `malicious`; single YARA/LLM/C2 is `needs_review`.
 - Benign still asks for review (56 medium capa/import/IoC signals, 54/100
-  functions analyzed); option C (two-signal corroboration) is the next precision
-  step if needed.
+  functions analyzed); this is the remaining alert-load decision.
 
 ### S4 packed / encoded
 
@@ -192,14 +194,14 @@ Payload priority 0 + one critical FLOSS URL at the payload address:
 |---|---|
 | UPX `sqlite_inj.upx` (628 KB) | pipeline detects UPX, `upx -d`, 100 functions, payload ✅, `malicious` |
 | encoded 100 fn, payload priority 0 (sample) | naive ✅ 53k/17.6s · soft ✅ 20k/74.6s · **threshold ❌ 390 tok** (`needs_review`) |
-| encoded pipeline state, after decoded-string xref | naive ✅ 1.5k/12.8s · soft ✅ 2.5k/31.6s · **threshold ✅ 2.1k/46.2s** (`malicious`) |
+| encoded pipeline state, after decoded-string xref | naive ✅ 1.5k/18.3s · soft ✅ 2.4k/35.6s · **threshold ✅ 2.0k/50.8s** (`malicious`) |
 
 - UPX is handled by the **unpack step**, not by the LLM.
 - FLOSS tight/decoded strings now carry `function`/`decoded_at`/`program_counter`;
   addresses are rebased from FLOSS PIE base `0x2000000` to Ghidra's image base;
   one-hop callers are propagated. Payload priority **4 → 7**, iocs populated,
   `must_include` forces threshold to analyze it.
-- The state has only 3 functions, so threshold 2.1k > naive 1.5k: this run proves
+- The state has only 3 functions, so threshold 2.0k > naive 1.5k: this run proves
   **recall/selection**, not token savings. The 100-function sample above remains
   the cost test.
 
