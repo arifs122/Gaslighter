@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 samples/bin_*
 samples/real/
+samples/sample_scale_*

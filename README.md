@@ -183,6 +183,19 @@ Payload priority 0 + one critical FLOSS URL at the payload address:
 - Benign still asks for review (56 medium capa/import/IoC signals); option C
   (two-signal corroboration) is the next precision step if needed.
 
+### S4 packed / encoded
+
+| case | result |
+|---|---|
+| UPX `sqlite_inj.upx` (628 KB) | pipeline detects UPX, `upx -d`, 100 functions, payload ✅, `malicious` |
+| encoded 100 fn, payload priority 0 | naive ✅ 53k/17.6s · soft ✅ 20k/74.6s · **threshold ❌ 390 tok** (`needs_review`) |
+
+- UPX is handled by the **unpack step**, not by the LLM.
+- FLOSS recovers the encoded IP/URL, but `must_include` cannot map a decoded-only
+  string to a function (not defined, no iocs, not in pseudo-C). Threshold skips
+  the priority-0 payload; soft is the safe fallback.
+- Next fix: FLOSS `decoded_at` / tight-string xref mapping or a file-level pass.
+
 ### Real large sample (SQLite amalgamation)
 
 ```bash
